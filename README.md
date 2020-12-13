@@ -1,3 +1,20 @@
+## Requirements
+
+Python 3.8+
+
+## Installation
+
+<div class="termy">
+
+```console
+$ pip install plex_default_settings
+---> 100%
+Successfully installed plex_default_settings
+```
+
+</div>
+
+
 # Usage
 
 ## Set jpn dubs for every episode in the show "Hokuto No Ken Fan-Kai"
