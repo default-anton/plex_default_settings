@@ -1,7 +1,6 @@
 bandit
 flake8
 flake8-bandit
-flake8-docstrings
 flake8-builtins
 flake8-isort
 flake8-eradicate
