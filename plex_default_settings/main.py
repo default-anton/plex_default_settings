@@ -68,7 +68,6 @@ def dub(username: str = username,
     plex: PlexServer = account.resource(servername).connect()
 
     try:
-        show: Show = plex.library.section('TV Shows').get(show)
         not_found_dubs_count = 0
         for part in _get_media_parts(plex, show):
             is_found = False
@@ -98,9 +97,8 @@ def set_verbose(verbose: bool = typer.Option(False)):
     GLOBAL_OPTIONS['verbose'] = verbose
 
 
-def _get_media_parts(plex: PlexServer, show: str) -> Generator[MediaPart, None, None]:
-    show: Show = plex.library.section('TV Shows').get(show)
-
+def _get_media_parts(plex: PlexServer, show_title: str) -> Generator[MediaPart, None, None]:
+    show: Show = plex.library.section('TV Shows').get(show_title)
     with typer.progressbar(show.episodes(), label='Updating episodes', show_eta=False) as progress:
         for episode in progress:
             episode = episode.reload()
