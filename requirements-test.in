@@ -1,0 +1,13 @@
+bandit
+flake8
+flake8-bandit
+flake8-docstrings
+flake8-builtins
+flake8-isort
+flake8-eradicate
+flake8-print
+flake8-walrus
+mypy
+isort
+jedi
+yapf
