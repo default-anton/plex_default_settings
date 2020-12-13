@@ -18,6 +18,7 @@ compile-deps: requirements-test.in
 .PHONY:
 update-tools:
 	pip install --upgrade wheel
+	pip install --upgrade twine
 	pip install --upgrade pip
 	pip install --upgrade pip-tools
 	pip install --upgrade setuptools
