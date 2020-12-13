@@ -32,6 +32,7 @@ setup(
     ],
     keywords='plex, subtitles, dubbing, subs, dubs',
     packages=find_packages(),
+    include_package_data=True,
     python_requires='>=3.8, <4',
     install_requires=[
         'plexapi==4.2.0',
