@@ -8,7 +8,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='plex_default_settings',
-    version='0.1.3',
+    version='0.1.4',
     author='Anton Kuzmenko',
     author_email='hotk@hey.com',
     description='Plex default settings',
